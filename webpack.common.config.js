@@ -2,7 +2,6 @@ import * as path from "node:path";
 
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyWebpackPlugin from "copy-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default {
   mode: "none",
@@ -28,7 +27,7 @@ export default {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        use: ["to-string-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.webp$/,
@@ -57,10 +56,6 @@ export default {
       inject: "head",
       template: path.resolve("src", "index.html"),
       scriptLoading: "defer",
-    }),
-    new MiniCssExtractPlugin({
-      filename: "assets/styles/main.[contenthash:8].css",
-      chunkFilename: "assets/styles/chunk.[contenthash:8]",
     }),
   ],
 };
