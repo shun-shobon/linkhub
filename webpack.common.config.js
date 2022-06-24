@@ -33,7 +33,7 @@ export default {
         test: /\.webp$/,
         type: "asset",
         generator: {
-          filename: "assets/images/[name].[contenthash:8].[ext]",
+          filename: "assets/images/[name].[contenthash:8][ext]",
         },
         parser: {
           dataUrlCondition: {
