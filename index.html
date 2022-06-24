@@ -2,12 +2,163 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHUN's LinkHub</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="layout">
+      <header class="hero-wrapper">
+        <div class="hero">
+          <img
+            class="hero__icon"
+            alt="アイコン"
+            src="/assets/favicon.svg"
+            width="256"
+            height="256"
+          />
+          <h1 class="hero__title">SHUN/しゅん</h1>
+        </div>
+      </header>
+      <main class="links">
+        <h1 class="links__title">Links</h1>
+        <ul class="links__list">
+          <li>
+            <a
+              class="link-card"
+              href="https://s2n.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-card__icon"
+                alt="globe"
+                src="/assets/globe.svg"
+              />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Portfolio</h2>
+                <div class="link-card__name">s2n.tech</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://blog.s2n.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="link-card__icon" alt="blog" src="/assets/blog.svg" />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Blog</h2>
+                <div class="link-card__name">blog.s2n.tech</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://github.com/shun-shobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-card__icon"
+                alt="GitHub"
+                src="/assets/github.svg"
+              />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">GitHub</h2>
+                <div class="link-card__name">@shun-shobon</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://twitter.com/shun_shobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-card__icon"
+                alt="Twitter"
+                src="/assets/twitter.svg"
+              />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Twitter</h2>
+                <div class="link-card__name">@shun_shobon</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://facebook.com/shunshobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-card__icon"
+                alt="Facebook"
+                src="/assets/facebook.svg"
+              />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Facebook</h2>
+                <div class="link-card__name">@shunshobon</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://keybase.io/shunshobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="link-card__icon"
+                alt="Keybase"
+                src="/assets/keybase.svg"
+              />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Keybase</h2>
+                <div class="link-card__name">@shunshobon</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://speakerdeck.com/shunshobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="link-card__icon" alt="link" src="/assets/link.svg" />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Speaker Deck</h2>
+                <div class="link-card__name">@shunshobon</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://www.wantedly.com/id/shun_shobon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img class="link-card__icon" alt="link" src="/assets/link.svg" />
+              <div class="link-card__text-wrapper">
+                <h2 class="link-card__title">Wantedly</h2>
+                <div class="link-card__name">@shun_shobon</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </main>
+      <footer class="footer">Copyright©2021 Shuntaro Nishizawa</footer>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

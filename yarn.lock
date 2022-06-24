@@ -690,6 +690,7 @@ __metadata:
   resolution: "linkhub@workspace:."
   dependencies:
     prettier: ^2.7.1
+    the-new-css-reset: ^1.7.2
     typescript: ^4.5.4
     vite: ^2.9.9
   languageName: unknown
@@ -1180,6 +1181,13 @@ __metadata:
     mkdirp: ^1.0.3
     yallist: ^4.0.0
   checksum: a04c07bb9e2d8f46776517d4618f2406fb977a74d914ad98b264fc3db0fe8224da5bec11e5f8902c5b9bcb8ace22d95fbe3c7b36b8593b7dfc8391a25898f32f
+  languageName: node
+  linkType: hard
+
+"the-new-css-reset@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "the-new-css-reset@npm:1.7.2"
+  checksum: 8c16fa4dcd6b30bd7129f0e3dd188eca752c7b6caf72813aa349a806afb3c10b0afec9ad2313fa596ebbb964c5e05a1d67bfd6cde8e59df443c46df4459cec5f
   languageName: node
   linkType: hard
 

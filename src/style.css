@@ -1,8 +1,92 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-bg: #d8eefe;
+  --color-card-bg: #fffffe;
+  --color-primary: #094067;
+  --color-text: #5f6c7b;
+}
+
+html {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  position: absolute;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.hero {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__icon {
+  border: 8px solid var(--color-card-bg);
+  border-radius: 50%;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.links {
+  width: 100%;
+  max-width: 80ch;
+  margin: 32px auto 0;
+}
+
+.links__title {
+  color: var(--color-primary);
+  font-weight: bolder;
+  font-size: 2rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-bottom: 16px;
+}
+
+.links__list {
+  display: grid;
+  gap: 16px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #888;
+}
+
+.link-card__icon {
+  width: 2rem;
+}
+
+.link-card__title {
+  color: var(--color-primary);
+  font-weight: bolder;
+}
+
+.footer {
+  margin-top: 32px;
+  width: 100%;
+  border-top: 1px solid var(--color-text);
+  padding: 16px;
+  display: grid;
+  place-items: center;
 }
